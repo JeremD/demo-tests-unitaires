@@ -14,7 +14,7 @@ public class App
     {
     	
     	try {
-    		int distanceLevenshtein = StringUtils.levenshteinDistance("castor", "instance");
+    		int distanceLevenshtein = StringUtils.levenshteinDistance(null, "instance");
         	System.out.println("Distance Levenshtein : " + distanceLevenshtein);
 
 		} catch (Exception e) {

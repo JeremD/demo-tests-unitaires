@@ -13,14 +13,14 @@ public class StringUtilsTest {
 	@Test
 	public void testLevenshteinDistanceDifference() {
 		int resultat = StringUtils.levenshteinDistance("chien", "chine");
-		// distance attendu de 2
+		// distance attendue de 2
 		Assert.assertEquals(2, resultat);
 	}
 	
 	@Test
 	public void testLevenshteinDistanceEqual() {
 		int resultat = StringUtils.levenshteinDistance("hiboux", "hiboux");
-		// distance attendu de 0
+		// distance attendue de 0
 		Assert.assertEquals(0, resultat);
 	}
 

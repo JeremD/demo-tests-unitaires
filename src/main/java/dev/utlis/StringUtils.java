@@ -17,6 +17,7 @@ public final class StringUtils {
 	 */
 	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) throws NullPointerException {
 		
+		// Exception s'il manque un des deux mots
 		if (lhs == null || rhs == null) {
 			throw new NullPointerException("Vous devez saisir deux mots");
 		}

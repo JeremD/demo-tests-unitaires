@@ -16,6 +16,13 @@ public class StringUtilsTest {
 		// distance attendu de 2
 		Assert.assertEquals(2, resultat);
 	}
+	
+	@Test
+	public void testLevenshteinDistanceEqual() {
+		int resultat = StringUtils.levenshteinDistance("hiboux", "hiboux");
+		// distance attendu de 0
+		Assert.assertEquals(0, resultat);
+	}
 
 	@Test (expected = NullPointerException.class)
 	public void testLevenshteinDistanceNull() {

@@ -15,7 +15,12 @@ public final class StringUtils {
 	 * @param rhs chaine 2
 	 * @return distance
 	 */
-	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) {
+	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) throws NullPointerException {
+		
+		if (lhs == null || rhs == null) {
+			throw new NullPointerException("Vous devez saisir deux mots");
+		}
+		
 		int len0 = lhs.length() + 1;
 		int len1 = rhs.length() + 1;
 		int[] cost = new int[len0];
